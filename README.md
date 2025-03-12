@@ -1,6 +1,5 @@
 # Router Configuration / MAC Generator App
 
-![My screenshot](images/screenshot.png "Optional Title")
 
 A cross-platform C++ application (using wxWidgets and libssh) that allows you to:
 
