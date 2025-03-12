@@ -1,0 +1,34 @@
+# ---- Operating System ----
+.DS_Store
+Thumbs.db
+
+# ---- General C++ ----
+*.exe
+*.out
+*.obj
+*.o
+*.a
+*.lib
+*.dll
+*.so
+*.dylib
+*.pdb
+
+# ---- CMake & Build Folders ----
+build/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+*.cmake
+
+# ---- wxWidgets or other library binaries (as needed) ----
+# (Generally, you don't want to commit third-party libraries or big blobs of binaries.)
+
+# ---- Editor & IDE specific ----
+.vscode/
+*.user
+*.suo
+*.sln
+*.vcxproj*
+*.idea/
