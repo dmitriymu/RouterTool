@@ -2,7 +2,6 @@
 
 ![My screenshot](images/screenshot.png "Optional Title")
 
-
 A cross-platform C++ application (using wxWidgets and libssh) that allows you to:
 
 1. Connect via SSH to a remote device (e.g., a router).
@@ -37,14 +36,13 @@ A cross-platform C++ application (using wxWidgets and libssh) that allows you to
    brew install wxwidgets libssh
    ```
 
-
 (You may need to install **pkg-config** as well if it’s not already installed.)
 
 **2.**	**Clone the Repository**
 
 ```
-git clone https://github.com/YourUsername/YourRepo.git
-cd YourRepo
+git clone https://github.com/dmitriymu/RouterTool.git
+cd RouterTool
 ```
 
 **3. Build**
@@ -61,7 +59,6 @@ make
 ./RoCom
 ```
 
-
 **Linux**
 
 **1.**	**Install Dependencies**
@@ -76,8 +73,8 @@ sudo apt-get install build-essential cmake pkg-config libwxgtk3.0-gtk3-dev libss
 **2.**	**Clone the Repository**
 
 ```
-git clone https://github.com/YourUsername/YourRepo.git
-cd YourRepo
+git clone https://github.com/dmitriymu/RouterTool.git
+cd RouterTool
 ```
 
 **3.**	**Build**
@@ -94,7 +91,6 @@ make
 ./RoCom
 ```
 
-
 **Windows**
 
 **1.**	**Install Dependencies**
@@ -108,8 +104,8 @@ make
 **2.**	**Clone the Repository**
 
 ```
-git clone https://github.com/YourUsername/YourRepo.git
-cd YourRepo
+git clone https://github.com/dmitriymu/RouterTool.git
+cd RouterTool
 ```
 
 **3.**	**Generate Project Files**
@@ -144,8 +140,6 @@ Double-click **RoCom.exe** in the output folder, or run from the command line:
 
 ---
 
-
-
 **Usage**
 
 After building:
@@ -161,8 +155,6 @@ After building:
 **5.**	**Notes** opens a text window for reading/editing local notes (saved to **notes.txt**).
 
 ---
-
-
 
 ## License
 
