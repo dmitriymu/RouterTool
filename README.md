@@ -1,5 +1,6 @@
 # Router Configuration / MAC Generator App
 
+![RoCOM](https://github.com/dmitriymu/RouterTool/blob/main/images/RoCom.png)
 
 A cross-platform C++ application (using wxWidgets and libssh) that allows you to:
 
