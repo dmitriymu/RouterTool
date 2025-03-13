@@ -1,0 +1,9 @@
+Unzip 'RoCom.zip' to a folder of your choice.
+Open Terminal use 'cd' command to navigate to the unzipped folder.
+Run the program by typing './RoCom'
+    !!!Note!!! You will need to give execute permission.
+    Go to 'System Settings...' -> 'Privacy & Security' -> scroll down to Security section, and click on 'Open Anyway'
+    
+Do not try to run it from Finder, as it will fail.
+
+When notes are created, they will be stored in the same directory in 'notes.txt' file.
