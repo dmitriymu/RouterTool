@@ -17,21 +17,30 @@ A cross-platform C++ application (using wxWidgets and libssh) that allows you to
 
 ---
 
-## Requirements
 
-1. **C++17** or later compiler
-2. **wxWidgets** (must be installed and findable by CMake)
-3. **libssh** (installed and findable by CMake)
-4. **CMake** (version 3.10 or higher)
+## Dependencies
 
----
+- **C++17** compiler
+- **libssh** (installed via `brew install libssh` or equivalent)
+- **wxWidgets (static build)**:
+  - Download the [latest wxWidgets release](https://www.wxwidgets.org/downloads/).
+  - Configure it with CMake to disable shared libs:
+
+    ```bash
+    cmake -DwxBUILD_SHARED=OFF -DwxBUILD_MONOLITHIC=ON -DwxBUILD_UNICODE=ON -DwxOSX_USE_COCOA=ON ..
+    make -j8
+    sudo make install
+    ```
+  - This installs static `.a` files into `/usr/local/lib` (by default).
+
+    ---
 
 ## Building & Running
 
 ### macOS
 
 1. **Install Dependencies**
-   Using [Homebrew](https://brew.sh/):
+   Using [Homebrew](https://brew.sh/) (for dynamic build option, skip to step 2 for static build):
    ```bash
    brew install wxwidgets libssh
    ```
@@ -45,12 +54,12 @@ git clone https://github.com/dmitriymu/RouterTool.git
 cd RouterTool
 ```
 
-**3. Build**
+**3. Build (Static)**
 
 ```
 mkdir build && cd build
 cmake ..
-make
+make -j8
 ```
 
 **4. Run**
@@ -59,7 +68,7 @@ make
 ./RoCom
 ```
 
-**Linux**
+**Linux (Needs testing)**
 
 **1.**	**Install Dependencies**
 
@@ -91,7 +100,7 @@ make
 ./RoCom
 ```
 
-**Windows**
+**Windows (Needs testing)**
 
 **1.**	**Install Dependencies**
 

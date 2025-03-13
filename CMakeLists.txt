@@ -5,6 +5,13 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # ------------------------------------------------------------------------------
+# Force static linking and point to wx-config if needed
+# ------------------------------------------------------------------------------
+set(wxWidgets_USE_STATIC ON)
+set(wxWidgets_ROOT_DIR "/usr/local")
+set(wxWidgets_CONFIG_EXECUTABLE "/usr/local/bin/wx-config")
+
+# ------------------------------------------------------------------------------
 # Find wxWidgets
 # ------------------------------------------------------------------------------
 find_package(wxWidgets REQUIRED COMPONENTS core base net adv)
@@ -23,7 +30,6 @@ link_directories(${SSH_LIBRARY_DIRS})
 # ------------------------------------------------------------------------------
 # Project Includes
 # ------------------------------------------------------------------------------
-# Point to your "include" folder where .h files reside.
 include_directories(${CMAKE_SOURCE_DIR}/include)
 
 # ------------------------------------------------------------------------------
